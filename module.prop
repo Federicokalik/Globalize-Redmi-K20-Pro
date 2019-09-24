@@ -1,6 +1,6 @@
-id=raphael
-name=Patch for raphael
+id=globalize.K20.Pro
+name=Globalize Redmi K20/Pro
 version=v0.5
 versionCode=05
 author=Federicokalik & Qwert99
-description=Patch for raphael
+description=Change name to Mi 9T/Pro, fix DRM L1 and add global camera app
