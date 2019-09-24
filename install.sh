@@ -138,10 +138,10 @@ print_modname() {
 on_install() {
   # The following is the default implementation: extract $ZIPFILE/system to $MODPATH
   # Extend/change the logic to whatever you want
-  custom_variables
-  device_check
   ui_print "- Extracting module files"
   unzip -o "$ZIPFILE" 'system/*' -d $MODPATH >&2
+  custom_variables
+  device_check
   }
 
 # Only some special files require specific permissions
@@ -164,16 +164,16 @@ set_permissions() {
 # this function associates the device model to k20/mi 9t/pro allowing the installation
 custom_variables() {
 if [ -f vendor/build.prop ]; then BUILDS="/system/build.prop vendor/build.prop"; else BUILDS="/system/build.prop"; fi
-  9TPro=$(grep -E "ro.product.device=raphael" $BUILDS)
+  9T=$(grep -E "ro.product.device=raphael|ro.product.device=raphaelin|ro.product.device=davinci" $BUILDS)
 }
 
 # this function allows installation just on k20/mi 9t/pro
 
 device_check() {
-  if [ -n "$9TPro" ] ; then
+  if [ -n "$9T" ] ; then
     break
   else
-    abort "Your device is not a K20 or a Mi 9T"
+    abort "Your device is not a K20/Pro or a Mi 9T/Pro"
   fi
 }
 © 2019 GitHub, Inc.
