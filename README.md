@@ -1,7 +1,28 @@
-# Magisk Installer
+# GLOBALIZE REDMI K20/Pro
 
-**Update `README.md` if you want to submit your module to the online repo!**
+# What does this module do?
+This simple mod allows you to change the name of the device in Mi 9T / Pro, add the DRM L1 and the global camera app
 
-For more information about how to use this module installer, please refer to [documentations](https://topjohnwu.github.io/Magisk/guides.html)
+# Why use this module?
 
-If you are not familiar with the Markdown syntax, you can start by experimenting on GitHub's online Markdown editor, which will let you preview before publishing. If you need more help, the [Markdown Cheat Sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) will be handy.
+If you want change the device name and the camera app in to the global version and to fix the DRM L1
+
+# What Roms is it compatible with?
+
+ONLY MIUI 10 (Pie) BASED ROMS
+
+# Who did this?
+
+[Federicokalik](https://github.com/Federicokalik) Ported to Pro version
+
+Qwert99 Creator and author of the mod.
+
+[MarcAnt01](https://github.com/MarcAnt01) support & helping.
+
+# Changelog
+
+
+### V 1.0
+
+Initial release
+
